@@ -1,0 +1,23 @@
+.auth-wrapper {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-wrapper > div {
+  width: 500px;
+}
+
+.auth-buttons > button {
+  margin-right: 10px;
+}
+
+.auth-footer {
+  color: #999;
+  font-size: 90%;
+
+  display: flex;
+  justify-content: space-between;
+}
+  .auth-footer > * { display: block; }

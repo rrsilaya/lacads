@@ -1,0 +1,29 @@
+.gwa-grid {
+  display: flex;
+}
+
+.gwa-graph {
+  flex: 1;
+}
+
+.gwa-stats {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.gwa-stat {
+  text-align: center;
+  line-height: 1.15;
+}
+  .gwa-stat > * { display: block; }
+  .gwa-stat .data {
+    font-weight: bold;
+    font-size: 30pt;
+  }
+  .gwa-stat .label {
+    text-transform: uppercase;
+    font-size: 85%;
+    letter-spacing: 0.25em;
+    color: var(--subtext-1);
+  }

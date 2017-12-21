@@ -1,0 +1,43 @@
+/* Buttons */
+button.primary {
+  border: 2px solid black;
+  background-color: transparent;
+  padding: 5px 20px;
+  font-size: 16pt;
+  color: black;
+
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.3s ease;
+}
+  button.primary::before {
+    background-color: black;
+    height: 100%; width: 120%;
+    position: absolute;
+    content: '';
+    top: 0; left: -10%;
+    z-index: -1;
+    transform: skew(-25deg) translateX(-100%);
+    transition: transform 0.3s ease;
+  }
+  button.primary:hover {
+    color: white;
+  }
+  button.primary:hover::before {
+    transform: translateX(0);
+  }
+
+/* Headings */
+h1.subbed {
+  margin-bottom: 0;
+}
+  h1.subbed + .sub {
+    margin-bottom: 1.5em;
+    display: block;
+  }
+
+/* Typography */
+.bold { font-weight: bold; }
+.hero { font-size: 36px; }
+.dehighlight { color: #999; }
